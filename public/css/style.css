@@ -1,0 +1,89 @@
+#messages{
+	height: 500px;
+	overflow: scroll;
+	overflow-x: hidden;
+	border:  black solid 1px;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.top {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	width: 100%;
+}
+
+.topMargin {
+	margin-top: 100px;
+}
+
+.hiddenErrorAlert{
+	display: none;
+}
+
+.innerPadding{
+	padding: 10px;
+}
+
+#chatList .list-group-item{
+	margin: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+
+.list-group-item > .badge {
+	float: left;
+	margin-right: 10px;
+	background-color: blue;
+}
+
+.addPadding{
+	padding: 10px;
+}
+
+.addMargin{
+	margin: 10px 0 10px 0;
+}
+
+.msgFromSelf{
+	text-align: right;
+}
+
+.alert{
+	margin-bottom: 0;
+}
+
+.page-header{
+	margin: 20px 0px 20px;	
+}
+
+@media (max-width: 991px){
+	.longMessage{
+		display: none;
+	}	
+}
+
+@media (max-height: 750px){
+	#messages{
+		height: 250px;
+	}
+	
+	#chatList .list-group-item{
+		margin: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: large;
+	}
+	
+	.list-group-item > .badge {
+		float: left;
+		margin-right: 10px;
+		font-size: 12px;
+		margin-top: 5px;
+		background-color: blue;
+	}
+
+}

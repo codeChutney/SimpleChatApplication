@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+	head
+		title= title
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css')
+		link(rel='stylesheet' href='/css/style.css')
+		link(rel='shortcut icon' href='/img/favicon.ico')
+	body
+		block content
+		script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+		script(type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+		script(type='text/javascript' src='/socket.io/socket.io.js')
+		block body_end
+	footer
+		.container.bottomOfPage
+			h4 Credits
+				small 
+					a(href='http://glyphicons.com/') glyphicons

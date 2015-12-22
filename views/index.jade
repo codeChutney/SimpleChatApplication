@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	.container
+		.page-header.top
+			h2 Chatroom
+				small(id='userCount' class='addPadding')
+		section.topMargin
+			.row
+				.col-xs-8.col-xs-offset-4.col-sm-6.col-sm-offset-6
+					.alert.alert-info.userNameInputGroup Enter username to continue.
+			.row
+				.col-xs-8.col-xs-offset-4.col-sm-6.col-sm-offset-6
+					.input-group(class='userNameInputGroup ')
+						span(class='input-group-btn')
+							button(class='btn btn-default input-lg' type='button' id='userNameSubmit') Go!
+						input(id='userName' type='text' class='form-control input-lg' placeholder='user name here...')
+				.col-xs-8.col-xs-offset-4.col-sm-6.col-sm-offset-6
+					#userNameOutputGroup.alert.alert-success.hiddenErrorAlert	 
+				.col-xs-8.col-xs-offset-4.col-sm-6.col-sm-offset-6.addPadding
+					#userNameErrorAlert.alert.alert-danger.hiddenErrorAlert Please enter a username.
+	section(id='chatSection')
+		.container
+			#messages.addMargin
+				ul(class='list-group' id='chatList')
+			.row
+				.col-xs-8.col-sm-10
+					textarea(type="text" id="message-box" class="form-control input-lg" placeholder="Write a message here..." rows="2")
+				.col-xs-4.col-sm-2
+					button#send-message-btn.btn.btn-primary.btn-lg.btn-block
+						span(class='longMessage') Send
+						span(class='glyphicon glyphicon-send innerPadding' aria-hidden="true")
+			.row
+				.col-xs-9.col-sm-10#inputEmptyAlertContainer.hiddenErrorAlert
+					.alert.alert-danger Please enter some text.
+block body_end
+		script(type='text/javascript' src='/js/main.js')

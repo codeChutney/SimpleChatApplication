@@ -1,0 +1,21 @@
+{
+  "name": "simplechatapp",
+  "version": "0.0.1",
+  "description": "A simple chat application.",
+  "main": "app.js",
+  "keywords": [
+    "chat",
+    "nodejs",
+    "express"
+  ],
+  "author": "AmitLal",
+  "license": "ISC",
+	"scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "socket.io": "*"
+  }
+}
